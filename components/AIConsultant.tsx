@@ -4,7 +4,7 @@ import { AIAnalysisResult, LoadingState } from '../types';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { Sparkles, Loader2, CheckCircle2 } from 'lucide-react';
 
-const COLORS = ['#6366f1', '#8b5cf6', '#d946ef', '#ec4899'];
+const COLORS = ['#FF3333', '#B91C1C', '#7F1D1D', '#F87171'];
 
 const AIConsultant: React.FC = () => {
   const [idea, setIdea] = useState('');
@@ -68,7 +68,7 @@ const AIConsultant: React.FC = () => {
               <button
                 type="submit"
                 disabled={status === LoadingState.LOADING || !idea.trim()}
-                className="w-full bg-brand-accent hover:bg-brand-accent/90 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-brand-accent hover:bg-red-600 text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-brand-accent/20"
               >
                 {status === LoadingState.LOADING ? (
                   <>
@@ -119,7 +119,7 @@ const AIConsultant: React.FC = () => {
                             <ul className="space-y-2">
                                 {result.recommendedServices.map((service, idx) => (
                                     <li key={idx} className="flex items-center text-gray-400 text-sm">
-                                        <CheckCircle2 className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                                        <CheckCircle2 className="w-4 h-4 text-brand-accent mr-2 flex-shrink-0" />
                                         {service}
                                     </li>
                                 ))}

@@ -30,8 +30,9 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex-shrink-0 flex items-center z-50">
-          <a href="#" className="text-2xl font-black tracking-tighter text-white uppercase">
-            Khereba<span className="text-brand-accent">.</span>
+          <a href="#" className="group flex flex-col leading-none transform -skew-x-6 hover:skew-x-0 transition-transform duration-300">
+            <span className="text-2xl font-black tracking-tighter text-white uppercase bg-brand-black px-1">Khereba</span>
+            <span className="text-2xl font-black tracking-tighter text-brand-accent uppercase bg-white px-1 ml-4 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">Studio</span>
           </a>
         </div>
         

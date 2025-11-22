@@ -7,8 +7,11 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
-            <h2 className="text-2xl font-bold text-white tracking-tighter uppercase">Khereba<span className="text-brand-accent">.</span></h2>
-            <p className="text-gray-500 text-sm mt-2">© {new Date().getFullYear()} Khereba Studio. All rights reserved.</p>
+             <a href="#" className="group flex flex-col leading-none transform -skew-x-6 hover:skew-x-0 transition-transform duration-300 origin-left">
+                <span className="text-xl font-black tracking-tighter text-white uppercase bg-brand-black px-1">Khereba</span>
+                <span className="text-xl font-black tracking-tighter text-brand-accent uppercase bg-white px-1 ml-4 shadow-[3px_3px_0px_0px_rgba(255,255,255,0.2)] w-max">Studio</span>
+            </a>
+            <p className="text-gray-500 text-sm mt-4">© {new Date().getFullYear()} Khereba Studio. All rights reserved.</p>
           </div>
           
           <div className="flex space-x-6">
