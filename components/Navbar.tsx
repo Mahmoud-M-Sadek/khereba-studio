@@ -25,14 +25,17 @@ const Navbar: React.FC = () => {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled ? 'bg-brand-black/90 backdrop-blur-lg border-b border-white/5 py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-brand-black/90 backdrop-blur-lg border-b border-white/5 py-2' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex-shrink-0 flex items-center z-50">
-          <a href="#" className="group flex flex-col leading-none transform -skew-x-6 hover:skew-x-0 transition-transform duration-300">
-            <span className="text-2xl font-black tracking-tighter text-white uppercase bg-brand-black px-1">Khereba</span>
-            <span className="text-2xl font-black tracking-tighter text-brand-accent uppercase bg-white px-1 ml-4 shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">Studio</span>
+          <a href="#" className="group block transform hover:scale-105 transition-transform duration-300">
+            <img 
+              src="https://f.top4top.io/p_3613l64qn1.png" 
+              alt="Khereba Studio" 
+              className="h-14 w-auto object-contain"
+            />
           </a>
         </div>
         
