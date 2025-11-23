@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
                         </div>
                         <div>
                         <h5 className="font-bold text-gray-300">Phone</h5>
-                        <p className="text-gray-500">01010624732</p>
+                        <p className="text-gray-500">+20 105 525 1422</p>
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
 
                 <div className="mt-10">
                     <a 
-                        href="https://wa.me/201010624732" 
+                        href="https://wa.me/201055251422" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 w-full py-4 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold rounded-sm transition-colors"
